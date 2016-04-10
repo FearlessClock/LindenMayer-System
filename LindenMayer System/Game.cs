@@ -111,7 +111,7 @@ namespace LindenMayer_System
             GL.BindBuffer(BufferTarget.ElementArrayBuffer, 0);
 
             //Content/LindemSystemRules/settingsTree.xml
-            string[] fileName = new string[1] { "Content/LindemSystemRules/Walker/settingsWalker2.xml" };///Console.ReadLine();
+            string[] fileName = new string[1] { "Content/LindemSystemRules/settingsTree.xml" };///Console.ReadLine();
             for (int i = 0; i < superTurtle.Length; i++)
             {
                 superTurtle[i] = new TurtleGraphics(fileName[i]);//new Vector2(0, 0), true, 90);
