@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LindenMayerSystem>
+  <Rules>
+   <RegularGrammer>
+      <toReplace>F</toReplace>
+      <replaceBy>F[RW]LW</replaceBy>
+   </RegularGrammer>
+   <StochasticGrammar>
+    
+   </StochasticGrammar>
+   <ContextSensitiveGrammer>
+    
+   </ContextSensitiveGrammer>
+  </Rules>
+  <TurtleGraphics>
+    <StartingValues X="0" Y="0" Direction="90"/>
+    <VariableSignifications>
+      <variable var="F" function="Forward" value="3" color="Brown" penUp="false" />
+      <variable var="W" function="Forward" value="2" color="Green" penUp="false" />
+      <variable var="+" function="Left" value="45"  />
+      <variable var="-" function="Right" value="45" />
+      <variable var="[" function="Push"/>
+      <variable var="]" function="Pop" />
+    </VariableSignifications>
+  </TurtleGraphics>
+</LindenMayerSystem>

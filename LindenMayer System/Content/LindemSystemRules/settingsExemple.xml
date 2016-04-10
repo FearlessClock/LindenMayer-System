@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LindenMayerSystem>
+  <axiom axiom="FX" />
+  <Rules>
+    <RegularGrammer>
+      <rule toReplace="F" replaceBy="F[RW]LW"/>
+    </RegularGrammer>
+    <StochasticGrammar>
+      <rule toReplace="X" replaceBy1="+FX" replaceBy2="-FX" replaceBy3="FX" chanceToReplace1="5" chanceToReplace2="8"/>
+    </StochasticGrammar>
+    <ContextSensitiveGrammer>
+      <rule before="F" toReplace="X" after="F" replaceBy="F[RW]LW"/>
+      <rule before="F" toReplace="X" after="F" replaceBy="F[RW]LW"/>
+    </ContextSensitiveGrammer>
+  </Rules>
+  <TurtleGraphics>
+    <StartingValues X="0" Y="0" Direction="90"/>
+    <VariableSignifications>
+      <variable var="F" function="Forward" value="3" color="LightGreen" penDown="true" />
+      <variable var="W" function="Forward" value="2" color="Green" penDown="true" />
+      <variable var="-" function="Left" value="90"  />
+      <variable var="+" function="Right" value="90" />
+      <variable var="[" function="Push"/>
+      <variable var="]" function="Pop" />
+    </VariableSignifications>
+  </TurtleGraphics>
+</LindenMayerSystem>

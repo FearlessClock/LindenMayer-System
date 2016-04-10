@@ -1,0 +1,20 @@
+﻿Walkers
+axiom = "[FZ]M+M[FX]M-M-M[FY]";
+
+StochasticRules.Add(new StochasticGrammars('X', "+FX", "-FX", "FX", 0.5, 0.8));
+StochasticRules.Add(new StochasticGrammars('Y', "RWY", "LWY", "WY", 0.5, 0.8));
+StochasticRules.Add(new StochasticGrammars('Z', "DTZ", "GTZ", "UZ", 0.5, 0.8));
+
+regularRules.Add(new RegularGrammer('U', "+F-T+W-"));
+
+F forward 8				L Left 45
+W forward 5				R Right 45
+T forward 4				G Left 5
+M forward 100 false		D Right 5
+- Left 90
++ Right 90
+
+
+
+
+

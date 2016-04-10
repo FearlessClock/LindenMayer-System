@@ -1,0 +1,99 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<LindenMayerSystem>
+  <axiom axiom=" Abstract ART" />
+  <Rules>
+    <Variables vars=" "/>
+    <RegularGrammer>
+      <rulec toReplace=" " replaceBy="+ù-ù((ù-ù(ù-ù(ù-ù((ù-ù(((((((*"/>
+      <rule toReplace="1" replaceBy=""/>
+      <rule toReplace="2" replaceBy=""/>
+      <rule toReplace="3" replaceBy=""/>
+      <rule toReplace="4" replaceBy=""/>
+      <rule toReplace="5" replaceBy=""/>
+      <rule toReplace="6" replaceBy=""/>
+      <rule toReplace="7" replaceBy=""/>
+      <rule toReplace="8" replaceBy=""/>
+      <rule toReplace="9" replaceBy=""/>
+      <rule toReplace=":" replaceBy=""/>
+    </RegularGrammer>
+    <StochasticGrammar>
+      <rulec toReplace="F" replaceBy1="FF" replaceBy2="F" replaceBy3="" chanceToReplace1="6" chanceToReplace2="20"/>
+      <rulec toReplace="W" replaceBy1="F[RW]LW" replaceBy2="F[RWW]LW" replaceBy3="F[RW]LWW" chanceToReplace1="3" chanceToReplace2="6"/>
+    </StochasticGrammar>
+    <ContextSensitiveGrammer>
+      <rulec before="F" toReplace="X" after="F" replaceBy="F[RW]LW"/>
+      <rulec before="F" toReplace="X" after="F" replaceBy="F[RW]LW"/>
+    </ContextSensitiveGrammer>
+  </Rules>
+  <TurtleGraphics>
+    <StartingValues X="0" Y="0" Direction="90"/>
+    <VariableSignifications>
+      <variable var="e" function="Forward" value="1" color="Green" penDown="true" />
+      <variable var="t" function="Forward" value="1" color="Yellow" penDown="true" />
+      <variable var="a" function="Forward" value="1" color="Green" penDown="true" />
+      <variable var="o" function="Forward" value="1" color="Green" penDown="true" />
+      <variable var="i" function="Forward" value="1" color="Green" penDown="true" />
+      <variable var="n" function="Forward" value="1" color="Yellow" penDown="true" />
+      <variable var="s" function="Forward" value="1" color="Yellow" penDown="true" />
+      <variable var="h" function="Forward" value="1" color="Yellow" penDown="true" />
+      <variable var="r" function="Forward" value="1" color="Yellow" penDown="true" />
+      <variable var="d" function="Left" value="45" />
+      <variable var="l" function="Left"  value="45"  />
+      <variable var="c" function="Right" value="45" />
+      <variable var="u" function="Forward" value="3" color="Green" penDown="true" />
+      <variable var="m" function="Right" value="45" />
+      <variable var="w" function="Left"  value="45"  />
+      <variable var="f" function="Right" value="45" />
+      <variable var="g" function="Left"  value="45"  />
+      <variable var="y" function="Right" value="45" />
+      <variable var="p" function="Left"  value="45"  />
+      <variable var="b" function="Right" value="45" />
+      <variable var="v" function="Left"  value="45"  />
+      <variable var="k" function="Right" value="45" />
+      <variable var="j" function="Left"  value="45"  />
+      <variable var="x" function="Right" value="45" />
+      <variable var="q" function="Left"  value="45"  />
+      <variable var="z" function="Right" value="45" />
+
+      <variable var="+" function="Left"  value="135"  />
+      <variable var="-" function="Right" value="135" />
+      <variable var="(" function="Left"  value="45"  />
+      <variable var=")" function="Right" value="45" />
+      <variable var="ù" function="Forward" value="1" color="Yellow" penDown="False" />
+      <variable var="*" function="Forward" value="8" color="Green" penDown="False" />
+
+      <variable var="V" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="K" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="J" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="X" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="Q" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="Z" function="Forward" value="3" color="Purple" penDown="true" />
+
+      <variable var="L" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="C" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="U" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="M" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="W" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="F" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="G" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="Y" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="P" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="B" function="Forward" value="2" color="Purple" penDown="true" />
+     
+      <variable var="E" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="T" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="A" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="O" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="I" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="N" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="S" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="H" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="R" function="Forward" value="3" color="Purple" penDown="true" />
+      <variable var="D" function="Forward" value="2" color="Purple" penDown="true" />
+      
+      <variable var=" " function="Forward" value="5" color="Yellow" penDown="false" />
+      <variable var="[" function="Push"/>
+      <variable var="]" function="Pop" />
+    </VariableSignifications>
+  </TurtleGraphics>
+</LindenMayerSystem>
